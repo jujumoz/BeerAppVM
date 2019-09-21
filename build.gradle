@@ -1,0 +1,66 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.lifecycle_version = "1.1.1"
+    ext.android_support_version = "28.0.0"
+    ext.gradle_version = "3.1.0"
+    ext.constraint_version = "1.1.3"
+    ext.glassfish_version = "3.1.1"
+    ext.stetho = "1.5.1"
+    ext.glide = "4.8.0"
+
+    //kotlin
+    ext.kotlin_version = "1.3.41"
+    ext.kotlin_core_version = "1.1.0-alpha05"
+
+    //android
+    ext.dagger_version = "2.16"
+    ext.dexmaker = "1.2"
+    ext.robolectric = "4.1"
+    ext.material = "1.1.0-alpha05"
+
+    //network
+    ext.retrofit2 = "2.5.0"
+    ext.room = "1.1.1"
+    ext.stetho = "1.5.1"
+    ext.okhttp3_logging_interceptor = "3.8.1"
+    ext.rxjava2_rxandroid = "2.1.1"
+    ext.rxjava2_rxjava = "2.2.7"
+    ext.rxjava2_rxkotlin = "2.2.0"
+    ext.rxjava2_adapter = "1.0.0"
+
+    //API
+    ext.facebook = "5.0.0"
+    ext.google_places = "1.1.0"
+
+    //java
+    ext.junit = "4.12"
+    ext.javax_inject = "1"
+
+    ext.mockito = "2.23.0"
+    ext.mockito_kotlin = "2.0.0"
+
+    repositories {
+        google()
+        jcenter()
+
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:3.5.0"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

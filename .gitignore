@@ -1,0 +1,33 @@
+
+.gradle
+.DS_Store
+/captures
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Eclipse project files
+.classpath
+.project
+
+# Android Studio
+.idea/
+/*/local.properties
+/*/out
+/*/*/build
+*.iml
+*.iws
+*.ipr
+*~
+*.swp
+
+# Gradle files
+build/
+Results
+
+#room
+data/schemas/
